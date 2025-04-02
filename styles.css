@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+/* Container for video and overlay */
+.video-container {
+    position: relative;
+    display: inline-block;
+    border: 3px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Video (Camera feed) */
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Canvas (Overlay Image) */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: grab;
+    background: transparent; /* Ensures transparency */
+}
